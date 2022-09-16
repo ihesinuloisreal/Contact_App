@@ -102,7 +102,11 @@ function App() {
 
         />
       
-        <Route path='/add' element={<AddContact addContactHanler={addContactHanler}/>}/>
+        <Route path='/add' element={
+          <AddContact 
+            addContactHanler={addContactHanler}
+         />}
+         />
         <Route path='/contact/:id' element={<ContactDetail/>}/>
         <Route path='/delete/:id' element={<DeleteContact removeContact={removeContactHandle}/>} />
         <Route path='/edit/:id' element={<EditContact updateContactHanler={updateContactHanler}/>} />
